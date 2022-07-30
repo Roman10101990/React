@@ -1,0 +1,180 @@
+﻿* {
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    font-size:14px;
+}
+*,*{
+    list-style: none;
+}
+body {
+    background-image: url("./img/main.jpg");
+}
+a {
+    text-decoration: none;
+}
+#root, #id {
+    width: 800px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+#main-nav {
+    justify-content: center;
+}
+nav a {
+    color: white;
+    font-size: 18px
+}
+#main-nav a{
+    font-size:26px;
+    font-weight:600;
+    color:white;
+}
+#editDep {
+    color: white;
+    font-size: 24px;
+    font-weight: 600;
+    text-shadow: #FC0 7px 0 19px;
+}
+
+.divList {
+    background-image: url("./img/bg1.jpg");
+    padding:5px;
+    width: 600px;
+    height: auto;
+    margin: 0 auto;
+    margin-top: 15px;
+    color: white;
+    font-size: 28px !important;
+}
+.add_empl {
+    font-size: 28px;
+    font-weight: 600;
+    color: white;
+    text-shadow: #FC0 7px 0 19px;
+}
+#salBlock{
+    margin-top:20px;
+}
+#persList{
+    margin-top:15px;
+}
+.head--title{
+    font-size:32px;
+    font-weight:600;
+    text-shadow: #FC0 7px 0 19px;
+}
+.head--title--edEmpl{
+    color:white;
+    font-weight:900;
+    font-size:28px;
+    text-shadow:#FC0 7px 0 19px;
+}
+.dep--det--head{
+    color:white; 
+    font-size:32px;
+    font-weight:600;
+}
+span.dep--main{
+    font-weight:900;
+     font-size:28px; 
+     text-shadow: #FC0 7px 0 19px;
+}
+span.dep--main2{
+    font-weight:900; 
+    font-size:28px;
+     text-shadow: white 7px 0 19px;
+}
+#div{
+    color:white;
+}
+.list_dep{
+    color:white;
+    font-size:32px;;
+}
+
+.animation-section{
+    height: 100vh;
+    background: #000;
+    position:relative;
+}
+
+section:before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to right, #f00,#f00,#0f0,#0ff,#ff0,#0ff);
+    mix-blend-mode: color;
+    pointer-events: none;
+}
+
+.animation-video{
+    object-fit: cover;
+    height: 100vh;
+    width: 100%;
+}
+
+.animation-text{
+    margin: 0;
+    padding: 0;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 100%;
+    text-align: center;
+    color: #ddd;
+    font-size: 5em;
+    font-family: sans-serif;
+    letter-spacing: 0.2em;
+}
+
+.animation-text span{
+    opacity: 0;
+    display: inline-block;
+    animation: animate 1s linear forwards;
+}
+
+@keyframes animate {
+    0%{
+        opacity: 0;
+        transform: rotateY(90deg);
+        filter: blur(10px);
+    }
+
+    100%{
+        opacity: 1;
+        transform: rotateY(0deg);
+        filter: blur(0);
+    }
+}
+
+.animation-text span:nth-child(1){
+    animation-delay: 1s;
+}
+
+.animation-text span:nth-child(2){
+    animation-delay: 2s;
+}
+
+.animation-text span:nth-child(3){
+    animation-delay: 2.5s;
+}
+
+.animation-text span:nth-child(4){
+    animation-delay: 3s;
+}
+
+.animation-text span:nth-child(5){
+    animation-delay: 3.5s;
+}
+
+.animation-text span:nth-child(6){
+    animation-delay: 3.75s;
+}
+
+.animation-text span:nth-child(7){
+    animation-delay: 4s;
+}
